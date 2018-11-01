@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="codesqills.org.android_examples.MainActivity">
+
+   <EditText
+       android:id="@+id/ed_name"
+       android:hint="Enter your name"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="30dp"/>
+
+   <EditText
+       android:id="@+id/ed_city"
+       android:hint="Enter your city"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="30dp"/>
+
+   <EditText
+       android:id="@+id/ed_age"
+       android:hint="Enter your age"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="30dp"/>
+
+   <Button
+       android:id="@+id/btn_add"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center_horizontal"
+       android:layout_marginStart="57dp"
+       android:fontFamily="@font/dancing_script"
+       android:text="Add" />
+
+   <com.airbnb.lottie.LottieAnimationView
+       android:layout_width="250dp"
+       android:layout_height="150dp"
+       app:lottie_fileName="loading.json"
+       android:visibility="gone"
+       android:layout_centerInParent="true"
+       android:layout_gravity="center"
+       app:lottie_autoPlay="true"
+       app:lottie_loop="true"
+       android:id="@+id/lottieAnimationView" />
+
+</LinearLayout>
